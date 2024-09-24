@@ -72,13 +72,13 @@
                 passing_grade = 75
                 dean_lister_grade = 90
                 # Calculate required Midterm and Final grades to pass
-                required_midterm = (passing_grade - (prelim * 0.2)) / 0.8
+                required_midterm = (passing_grade - (prelim * 0.2)) / 0.3
                 required_final = (passing_grade - (prelim * 0.2)) / 0.5
                 # Cap the required Final grade at 100
                 if required_final > 100:
                     required_final = 100            
                 # Calculate required Midterm and Final grades to be a Dean's Lister
-                required_midterm_dean = (dean_lister_grade - (prelim * 0.2)) / 0.8
+                required_midterm_dean = (dean_lister_grade - (prelim * 0.2)) / 0.3
                 required_final_dean = (dean_lister_grade - (prelim * 0.2)) / 0.5                
                 # Ensure Dean's Lister grades are between 90 and 100
                 if required_midterm_dean < 90:
